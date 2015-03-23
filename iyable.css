@@ -232,70 +232,14 @@ Only 3 classnames: for 0, 1 and half*/
 
 .radius-4{  border-radius: 4px;}
 .radius-8{  border-radius: 8px;}
-
-
-/*.RESPZY_col,.RESPZY_col {float:left; }
-
-.RESPZY_col {width:auto; }
-
-.RESPZY_col div{ background:rgba(255,255,0,1);}
-.RESPZY_col div:last-child { width:40%}*/
-
-
  
-
-nav li  {float:left; padding:10px; list-style:none}
-nav ul, nav img  {float:left}
-
-a {color:rgba(51,153,255,1)}
-
-
-/* ER CABESA */
-#erCabesa  {
- padding:3px; 
- height: 60px !important;
- transition:all ease-in-out 666ms; 
- -webkit-transition:all ease-in-out 666ms ;
- background:rgba(100%,100%,100%,0.70); 
- width:250px; 
- text-align:center !important;
- position:fixed;
- margin-top:33px;
- top:0; 
- left:0;
- .padding-top:23px;
- z-index:1234
-}
-#erCabesa nav { text-align:center !important ;  }
-#erCabesa:hover {
-	background: #fff;
-	-webkit-box-shadow: 0px 3px 11px 5px rgba(0,0,0,0.41);
-	box-shadow: 0px 3px 11px 5px rgba(0,0,0,0.41);
-}
-#erMenu a {font-family:'bebas neue'; text-decoration:none; font-size:22px; color:rgba(0,0,0,1); transition:all ease-in 333ms}
-#erMenu a:hover {color:rgba(255,0,51,1)}
-
-/* ER CUERPO */
-#erCuerpo {.padding-top:86px ;  }
-
-
 /*	Change HERE the size for a width for a responsive view. A default size is defined (1000px) 
  *  
  *  > Visibility for less 1000 px width
  *  affects to 'elm-normal'
  */
 @media (max-width:1000px) and (min-width:768px){
-#erCabesa   {   margin:0 auto !important; width:100%; text-align:center !important; height:50px  !important}		
-	
-#erCabesa nav { text-align:left; margin:0 auto !important; width:100%}	
-nav     { float:left; display:compact}
-nav li  { padding:10px; list-style:none; clear:left}
-.elm-hidden-normal {display:inherit}
-.elm-visible-normal  {display:none}
-
-.menuIcon{position:absolute; right:33px; top:33px}
-}
-
+ 
 
 /*	TABLET VIEWS
  *  > Visibility for less 768 px width
