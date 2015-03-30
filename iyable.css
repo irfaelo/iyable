@@ -5,10 +5,10 @@
  * Copyright 2014-2015 Ignacio Ramos (@irfaelo) / Indiana Yourself
  * See more details in... (https://github.com/irfaelo)
  * If works for you, please donate.
- 
+  
 
 --> PARTS TAKEN FROM normalize.css v3.0.2 | MIT License | git.io/normalize */
-html{font-family:sans-serif;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%}body{margin:0}article,aside,details,figcaption,figure,footer,header,hgroup,main,menu,nav,section,summary{display:block}audio,canvas,progress,video{display:inline-block;vertical-align:baseline}audio:not([controls]){display:none;height:0}[hidden],template{display:none}a{background-color:transparent}a:active,a:hover{outline:0}abbr[title]{border-bottom:1px dotted}b,strong{font-weight:700}dfn{font-style:italic} /* <-- end normalize */
+html{font-family:sans-serif;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%}body{margin:0}article,aside,details,figcaption,figure,footer,header,hgroup,main,menu,nav,section,summary{display:block}audio,canvas,progress,video{display:inline-block;vertical-align:baseline}audio:not([controls]){display:none;height:0}[hidden],[data-hidden="hand"],template{display:none}a{background-color:transparent}a:active,a:hover{outline:0}abbr[title]{border-bottom:1px dotted}b,strong{font-weight:700}dfn{font-style:italic} /* <-- end normalize */
 
 /* Complete normalization for html tag for fitting size 100% 
 AND FITS 
@@ -19,9 +19,10 @@ html, body, .full-fit {	height: 100%; width: 100%;}
 /* FLOATS ELEMENT 
 ------------- */
 	.fl-left {float: left;}
+    .fl-none {float:none}	
 	.fl-right {float: right;}
 	
-/* CENTERS  
+/* CENTERS 
 ------------- */	
 
 .center-div 		{text-align:center}
@@ -68,93 +69,7 @@ html, body, .full-fit {	height: 100%; width: 100%;}
 .width-col-for1 {
   width: 8.33333333%;
 }
-
-	 /* W + PADDING */
-	 /*1px*/
-	 .padding-1px[class~=width-col-for1]{padding:1px; width:-webkit-calc(100% - 2px)  !important;width:-moz-calc(100% - 2px)  !important;width:-o-calc(100% - 2px)  !important;width:calc(100% - 2px)  !important}
-	.padding-1px[class~=width-col-for2]{padding:1px; width:-webkit-calc(91,6665% - 2px)  !important;width:-moz-calc(91,6665% - 2px)  !important;width:-o-calc(91,6665% - 2px)  !important;width:calc(91,6665% - 2px)  !important}
-	.padding-1px[class~=width-col-for3]{padding:1px; width:-webkit-calc(83,333% - 2px)  !important;width:-moz-calc(83,333% - 2px)  !important;width:-o-calc(83,333% - 2px)  !important;width:calc(83,333% - 2px)  !important}
-	.padding-1px[class~=width-col-for4]{padding:1px; width:-webkit-calc(75% - 2px)  !important;width:-moz-calc(75% - 2px)  !important;width:-o-calc(75% - 2px)  !important;width:calc(75% - 2px)  !important}
-	.padding-1px[class~=width-col-for5]{padding:1px; width:-webkit-calc(66,668% - 2px)  !important;width:-moz-calc(66,668% - 2px)  !important;width:-o-calc(66,668% - 2px)  !important;width:calc(66,668% - 2px)  !important}
-	.padding-1px[class~=width-col-for6]{padding:1px; width:-webkit-calc(58,3345% - 2px)  !important;width:-moz-calc(58,3345% - 2px)  !important;width:-o-calc(58,3345% - 2px)  !important;width:calc(58,3345% - 2px)  !important}
-	.padding-1px[class~=width-col-for7]{padding:1px; width:-webkit-calc(50% - 2px)  !important;width:-moz-calc(50% - 2px)  !important;width:-o-calc(50% - 2px)  !important;width:calc(50% - 2px)  !important}
-	.padding-1px[class~=width-col-for8]{padding:1px; width:-webkit-calc(41,6675% - 2px)  !important;width:-moz-calc(41,6675% - 2px)  !important;width:-o-calc(41,6675% - 2px)  !important;width:calc(41,6675% - 2px)  !important}
-	.padding-1px[class~=width-col-for9]{padding:1px; width:-webkit-calc(33,334% - 2px)  !important;width:-moz-calc(33,334% - 2px)  !important;width:-o-calc(33,334% - 2px)  !important;width:calc(33,334% - 2px)  !important}
-	.padding-1px[class~=width-col-for10]{padding:1px; width:-webkit-calc(25% - 2px)  !important;width:-moz-calc(25% - 2px)  !important;width:-o-calc(25% - 2px)  !important;width:calc(25% - 2px)  !important}
-	.padding-1px[class~=width-col-for11]{padding:1px; width:-webkit-calc(16,667% - 2px)  !important;width:-moz-calc(16,667% - 2px)  !important;width:-o-calc(16,667% - 2px)  !important;width:calc(16,667% - 2px)  !important}
-	.padding-1px[class~=width-col-for12]{padding:1px; width:-webkit-calc(8,3335% - 2px)  !important;width:-moz-calc(8,3335% - 2px)  !important;width:-o-calc(8,3335% - 2px)  !important;width:calc(8,3335% - 2px)  !important}
-	
-	/*2px*/
-	.padding-2px[class~=width-col-for1]{padding:2px; width:-webkit-calc(100% - 4px)  !important;width:-moz-calc(100% - 4px)  !important;width:-o-calc(100% - 4px)  !important;width:calc(100% - 4px)  !important}
-.padding-2px[class~=width-col-for2]{padding:2px; width:-webkit-calc(91,6665% - 4px)  !important;width:-moz-calc(91,6665% - 4px)  !important;width:-o-calc(91,6665% - 4px)  !important;width:calc(91,6665% - 4px)  !important}
-.padding-2px[class~=width-col-for3]{padding:2px; width:-webkit-calc(83,333% - 4px)  !important;width:-moz-calc(83,333% - 4px)  !important;width:-o-calc(83,333% - 4px)  !important;width:calc(83,333% - 4px)  !important}
-.padding-2px[class~=width-col-for4]{padding:2px; width:-webkit-calc(75% - 4px)  !important;width:-moz-calc(75% - 4px)  !important;width:-o-calc(75% - 4px)  !important;width:calc(75% - 4px)  !important}
-.padding-2px[class~=width-col-for5]{padding:2px; width:-webkit-calc(66,668% - 4px)  !important;width:-moz-calc(66,668% - 4px)  !important;width:-o-calc(66,668% - 4px)  !important;width:calc(66,668% - 4px)  !important}
-.padding-2px[class~=width-col-for6]{padding:2px; width:-webkit-calc(58,3345% - 4px)  !important;width:-moz-calc(58,3345% - 4px)  !important;width:-o-calc(58,3345% - 4px)  !important;width:calc(58,3345% - 4px)  !important}
-.padding-2px[class~=width-col-for7]{padding:2px; width:-webkit-calc(50% - 4px)  !important;width:-moz-calc(50% - 4px)  !important;width:-o-calc(50% - 4px)  !important;width:calc(50% - 4px)  !important}
-.padding-2px[class~=width-col-for8]{padding:2px; width:-webkit-calc(41,6675% - 4px)  !important;width:-moz-calc(41,6675% - 4px)  !important;width:-o-calc(41,6675% - 4px)  !important;width:calc(41,6675% - 4px)  !important}
-.padding-2px[class~=width-col-for9]{padding:2px; width:-webkit-calc(33,334% - 4px)  !important;width:-moz-calc(33,334% - 4px)  !important;width:-o-calc(33,334% - 4px)  !important;width:calc(33,334% - 4px)  !important}
-.padding-2px[class~=width-col-for10]{padding:2px; width:-webkit-calc(25% - 4px)  !important;width:-moz-calc(25% - 4px)  !important;width:-o-calc(25% - 4px)  !important;width:calc(25% - 4px)  !important}
-.padding-2px[class~=width-col-for11]{padding:2px; width:-webkit-calc(16,667% - 4px)  !important;width:-moz-calc(16,667% - 4px)  !important;width:-o-calc(16,667% - 4px)  !important;width:calc(16,667% - 4px)  !important}
-.padding-2px[class~=width-col-for12]{padding:2px; width:-webkit-calc(8,3335% - 4px)  !important;width:-moz-calc(8,3335% - 4px)  !important;width:-o-calc(8,3335% - 4px)  !important;width:calc(8,3335% - 4px)  !important}
-
-	/*4px*/
-	.padding-4px[class~=width-col-for1]{padding:4px; width:-webkit-calc(100% - 8px)  !important;width:-moz-calc(100% - 8px)  !important;width:-o-calc(100% - 8px)  !important;width:calc(100% - 8px)  !important}
-.padding-4px[class~=width-col-for2]{padding:4px; width:-webkit-calc(91,6665% - 8px)  !important;width:-moz-calc(91,6665% - 8px)  !important;width:-o-calc(91,6665% - 8px)  !important;width:calc(91,6665% - 8px)  !important}
-.padding-4px[class~=width-col-for3]{padding:4px; width:-webkit-calc(83,333% - 8px)  !important;width:-moz-calc(83,333% - 8px)  !important;width:-o-calc(83,333% - 8px)  !important;width:calc(83,333% - 8px)  !important}
-.padding-4px[class~=width-col-for4]{padding:4px; width:-webkit-calc(75% - 8px)  !important;width:-moz-calc(75% - 8px)  !important;width:-o-calc(75% - 8px)  !important;width:calc(75% - 8px)  !important}
-.padding-4px[class~=width-col-for5]{padding:4px; width:-webkit-calc(66,668% - 8px)  !important;width:-moz-calc(66,668% - 8px)  !important;width:-o-calc(66,668% - 8px)  !important;width:calc(66,668% - 8px)  !important}
-.padding-4px[class~=width-col-for6]{padding:4px; width:-webkit-calc(58,3345% - 8px)  !important;width:-moz-calc(58,3345% - 8px)  !important;width:-o-calc(58,3345% - 8px)  !important;width:calc(58,3345% - 8px)  !important}
-.padding-4px[class~=width-col-for7]{padding:4px; width:-webkit-calc(50% - 8px)  !important;width:-moz-calc(50% - 8px)  !important;width:-o-calc(50% - 8px)  !important;width:calc(50% - 8px)  !important}
-.padding-4px[class~=width-col-for8]{padding:4px; width:-webkit-calc(41,6675% - 8px)  !important;width:-moz-calc(41,6675% - 8px)  !important;width:-o-calc(41,6675% - 8px)  !important;width:calc(41,6675% - 8px)  !important}
-.padding-4px[class~=width-col-for9]{padding:4px; width:-webkit-calc(33,334% - 8px)  !important;width:-moz-calc(33,334% - 8px)  !important;width:-o-calc(33,334% - 8px)  !important;width:calc(33,334% - 8px)  !important}
-.padding-4px[class~=width-col-for10]{padding:4px; width:-webkit-calc(25% - 8px)  !important;width:-moz-calc(25% - 8px)  !important;width:-o-calc(25% - 8px)  !important;width:calc(25% - 8px)  !important}
-.padding-4px[class~=width-col-for11]{padding:4px; width:-webkit-calc(16,667% - 8px)  !important;width:-moz-calc(16,667% - 8px)  !important;width:-o-calc(16,667% - 8px)  !important;width:calc(16,667% - 8px)  !important}
-.padding-4px[class~=width-col-for12]{padding:4px; width:-webkit-calc(8,3335% - 8px)  !important;width:-moz-calc(8,3335% - 8px)  !important;width:-o-calc(8,3335% - 8px)  !important;width:calc(8,3335% - 8px)  !important}
-
-	/*8px*/
-	.padding-8px[class~=width-col-for1]{padding:8px; width:-webkit-calc(100% - 16px)  !important;width:-moz-calc(100% - 16px)  !important;width:-o-calc(100% - 16px)  !important;width:calc(100% - 16px)  !important}
-.padding-8px[class~=width-col-for2]{padding:8px; width:-webkit-calc(91,6665% - 16px)  !important;width:-moz-calc(91,6665% - 16px)  !important;width:-o-calc(91,6665% - 16px)  !important;width:calc(91,6665% - 16px)  !important}
-.padding-8px[class~=width-col-for3]{padding:8px; width:-webkit-calc(83,333% - 16px)  !important;width:-moz-calc(83,333% - 16px)  !important;width:-o-calc(83,333% - 16px)  !important;width:calc(83,333% - 16px)  !important}
-.padding-8px[class~=width-col-for4]{padding:8px; width:-webkit-calc(75% - 16px)  !important;width:-moz-calc(75% - 16px)  !important;width:-o-calc(75% - 16px)  !important;width:calc(75% - 16px)  !important}
-.padding-8px[class~=width-col-for5]{padding:8px; width:-webkit-calc(66,668% - 16px)  !important;width:-moz-calc(66,668% - 16px)  !important;width:-o-calc(66,668% - 16px)  !important;width:calc(66,668% - 16px)  !important}
-.padding-8px[class~=width-col-for6]{padding:8px; width:-webkit-calc(58,3345% - 16px)  !important;width:-moz-calc(58,3345% - 16px)  !important;width:-o-calc(58,3345% - 16px)  !important;width:calc(58,3345% - 16px)  !important}
-.padding-8px[class~=width-col-for7]{padding:8px; width:-webkit-calc(50% - 16px)  !important;width:-moz-calc(50% - 16px)  !important;width:-o-calc(50% - 16px)  !important;width:calc(50% - 16px)  !important}
-.padding-8px[class~=width-col-for8]{padding:8px; width:-webkit-calc(41,6675% - 16px)  !important;width:-moz-calc(41,6675% - 16px)  !important;width:-o-calc(41,6675% - 16px)  !important;width:calc(41,6675% - 16px)  !important}
-.padding-8px[class~=width-col-for9]{padding:8px; width:-webkit-calc(33,334% - 16px)  !important;width:-moz-calc(33,334% - 16px)  !important;width:-o-calc(33,334% - 16px)  !important;width:calc(33,334% - 16px)  !important}
-.padding-8px[class~=width-col-for10]{padding:8px; width:-webkit-calc(25% - 16px)  !important;width:-moz-calc(25% - 16px)  !important;width:-o-calc(25% - 16px)  !important;width:calc(25% - 16px)  !important}
-.padding-8px[class~=width-col-for11]{padding:8px; width:-webkit-calc(16,667% - 16px)  !important;width:-moz-calc(16,667% - 16px)  !important;width:-o-calc(16,667% - 16px)  !important;width:calc(16,667% - 16px)  !important}
-.padding-8px[class~=width-col-for12]{padding:8px; width:-webkit-calc(8,3335% - 16px)  !important;width:-moz-calc(8,3335% - 16px)  !important;width:-o-calc(8,3335% - 16px)  !important;width:calc(8,3335% - 16px)  !important}
-
-	/*16px*/
-	.padding-16px[class~=width-col-for1]{padding:16px; width:-webkit-calc(100% - 32px)  !important;width:-moz-calc(100% - 32px)  !important;width:-o-calc(100% - 32px)  !important;width:calc(100% - 32px)  !important}
-.padding-16px[class~=width-col-for2]{padding:16px; width:-webkit-calc(91,6665% - 32px)  !important;width:-moz-calc(91,6665% - 32px)  !important;width:-o-calc(91,6665% - 32px)  !important;width:calc(91,6665% - 32px)  !important}
-.padding-16px[class~=width-col-for3]{padding:16px; width:-webkit-calc(83,333% - 32px)  !important;width:-moz-calc(83,333% - 32px)  !important;width:-o-calc(83,333% - 32px)  !important;width:calc(83,333% - 32px)  !important}
-.padding-16px[class~=width-col-for4]{padding:16px; width:-webkit-calc(75% - 32px)  !important;width:-moz-calc(75% - 32px)  !important;width:-o-calc(75% - 32px)  !important;width:calc(75% - 32px)  !important}
-.padding-16px[class~=width-col-for5]{padding:16px; width:-webkit-calc(66,668% - 32px)  !important;width:-moz-calc(66,668% - 32px)  !important;width:-o-calc(66,668% - 32px)  !important;width:calc(66,668% - 32px)  !important}
-.padding-16px[class~=width-col-for6]{padding:16px; width:-webkit-calc(58,3345% - 32px)  !important;width:-moz-calc(58,3345% - 32px)  !important;width:-o-calc(58,3345% - 32px)  !important;width:calc(58,3345% - 32px)  !important}
-.padding-16px[class~=width-col-for7]{padding:16px; width:-webkit-calc(50% - 32px)  !important;width:-moz-calc(50% - 32px)  !important;width:-o-calc(50% - 32px)  !important;width:calc(50% - 32px)  !important}
-.padding-16px[class~=width-col-for8]{padding:16px; width:-webkit-calc(41,6675% - 32px)  !important;width:-moz-calc(41,6675% - 32px)  !important;width:-o-calc(41,6675% - 32px)  !important;width:calc(41,6675% - 32px)  !important}
-.padding-16px[class~=width-col-for9]{padding:16px; width:-webkit-calc(33,334% - 32px)  !important;width:-moz-calc(33,334% - 32px)  !important;width:-o-calc(33,334% - 32px)  !important;width:calc(33,334% - 32px)  !important}
-.padding-16px[class~=width-col-for10]{padding:16px; width:-webkit-calc(25% - 32px)  !important;width:-moz-calc(25% - 32px)  !important;width:-o-calc(25% - 32px)  !important;width:calc(25% - 32px)  !important}
-.padding-16px[class~=width-col-for11]{padding:16px; width:-webkit-calc(16,667% - 32px)  !important;width:-moz-calc(16,667% - 32px)  !important;width:-o-calc(16,667% - 32px)  !important;width:calc(16,667% - 32px)  !important}
-.padding-16px[class~=width-col-for12]{padding:16px; width:-webkit-calc(8,3335% - 32px)  !important;width:-moz-calc(8,3335% - 32px)  !important;width:-o-calc(8,3335% - 32px)  !important;width:calc(8,3335% - 32px)  !important}
-
-	/*32px*/
-	.padding-32px[class~=width-col-for1]{padding:32px; width:-webkit-calc(100% - 64px)  !important;width:-moz-calc(100% - 64px)  !important;width:-o-calc(100% - 64px)  !important;width:calc(100% - 64px)  !important}
-.padding-32px[class~=width-col-for2]{padding:32px; width:-webkit-calc(91,6665% - 64px)  !important;width:-moz-calc(91,6665% - 64px)  !important;width:-o-calc(91,6665% - 64px)  !important;width:calc(91,6665% - 64px)  !important}
-.padding-32px[class~=width-col-for3]{padding:32px; width:-webkit-calc(83,333% - 64px)  !important;width:-moz-calc(83,333% - 64px)  !important;width:-o-calc(83,333% - 64px)  !important;width:calc(83,333% - 64px)  !important}
-.padding-32px[class~=width-col-for4]{padding:32px; width:-webkit-calc(75% - 64px)  !important;width:-moz-calc(75% - 64px)  !important;width:-o-calc(75% - 64px)  !important;width:calc(75% - 64px)  !important}
-.padding-32px[class~=width-col-for5]{padding:32px; width:-webkit-calc(66,668% - 64px)  !important;width:-moz-calc(66,668% - 64px)  !important;width:-o-calc(66,668% - 64px)  !important;width:calc(66,668% - 64px)  !important}
-.padding-32px[class~=width-col-for6]{padding:32px; width:-webkit-calc(58,3345% - 64px)  !important;width:-moz-calc(58,3345% - 64px)  !important;width:-o-calc(58,3345% - 64px)  !important;width:calc(58,3345% - 64px)  !important}
-.padding-32px[class~=width-col-for7]{padding:32px; width:-webkit-calc(50% - 64px)  !important;width:-moz-calc(50% - 64px)  !important;width:-o-calc(50% - 64px)  !important;width:calc(50% - 64px)  !important}
-.padding-32px[class~=width-col-for8]{padding:32px; width:-webkit-calc(41,6675% - 64px)  !important;width:-moz-calc(41,6675% - 64px)  !important;width:-o-calc(41,6675% - 64px)  !important;width:calc(41,6675% - 64px)  !important}
-.padding-32px[class~=width-col-for9]{padding:32px; width:-webkit-calc(33,334% - 64px)  !important;width:-moz-calc(33,334% - 64px)  !important;width:-o-calc(33,334% - 64px)  !important;width:calc(33,334% - 64px)  !important}
-.padding-32px[class~=width-col-for10]{padding:32px; width:-webkit-calc(25% - 64px)  !important;width:-moz-calc(25% - 64px)  !important;width:-o-calc(25% - 64px)  !important;width:calc(25% - 64px)  !important}
-.padding-32px[class~=width-col-for11]{padding:32px; width:-webkit-calc(16,667% - 64px)  !important;width:-moz-calc(16,667% - 64px)  !important;width:-o-calc(16,667% - 64px)  !important;width:calc(16,667% - 64px)  !important}
-.padding-32px[class~=width-col-for12]{padding:32px; width:-webkit-calc(8,3335% - 64px)  !important;width:-moz-calc(8,3335% - 64px)  !important;width:-o-calc(8,3335% - 64px)  !important;width:calc(8,3335% - 64px)  !important}
-
-
+ 
 
 /* VISIBILITY AND OPACITY FOR A RESPONSIVE ELEMENT 
 ------------- */
@@ -190,11 +105,11 @@ Only 3 classnames: for 0, 1 and half*/
 .trans-inout-1s    {transition:all ease-in-out 1s;-webkit-transition:all 1s ease-in-out;-o-transition:all 1s ease-in-out;}
 .trans-inout-500ms {transition:all ease-in-out .5s;-webkit-transition:all .5s ease-in-out;-o-transition:all .5s ease-in-out;}
 
-.trans-in-1s    {transition:all ease-in 1s;-webkit-transition:all 1s ease-in-;-o-transition:all 1s ease-in;}
+.trans-in-1s    {transition:all ease-in 1s !important;-webkit-transition:all 1s ease-in  !important;-o-transition:all 1s ease-in !important;}
 .trans-in-500ms {transition:all ease-in .5s;-webkit-transition:all .5s ease-in;-o-transition:all .5s ease-in;}
 
-.trans-out-1s    {transition:all ease-out 1s;-webkit-transition:all 1s ease-out;-o-transition:all 1s ease-out;}
-.trans-out-500ms {transition:all ease-out .5s;-webkit-transition:all .5s ease-out;-o-transition:all .5s ease-out;}
+.trans-out-1s    {transition:all ease-out 1s !important;-webkit-transition:all 1s ease-out !important;-o-transition:all 1s ease-out !important;}
+.trans-out-500ms {transition:all ease-out .5s !important;-webkit-transition:all .5s ease-out !important;-o-transition:all .5s ease-out !important;}
 
 
 /* CONTENT
@@ -220,8 +135,23 @@ Only 3 classnames: for 0, 1 and half*/
 .clear-both {clear:both}
 .clear-left {clear:left}
 .clear-right{clear:right}
-.fl-none {float:none}
 
+
+/* POSTIONS
+------------- */
+
+.abs {position:absolute}  
+.hide-left {left:-1000px}
+.show-left {left:0}
+
+.hide-top {top:-1000px}
+.show-top {top:0}
+
+.hide-right {right:-1000px}
+.show-right {right:0}
+
+.hide-bottom {bottom:-1000px}
+.show-bottom {bottom:0}
 
 /* COLUMNS
 ------------- */
@@ -232,14 +162,19 @@ Only 3 classnames: for 0, 1 and half*/
 
 .radius-4{  border-radius: 4px;}
 .radius-8{  border-radius: 8px;}
- 
+
+/*____ responsive zone ____*/
+
 /*	Change HERE the size for a width for a responsive view. A default size is defined (1000px) 
  *  
  *  > Visibility for less 1000 px width
  *  affects to 'elm-normal'
  */
 @media (max-width:1000px) and (min-width:768px){
- 
+.elm-hidden-normal {display:inherit}
+.elm-visible-normal  {display:none}
+}
+
 
 /*	TABLET VIEWS
  *  > Visibility for less 768 px width
@@ -260,7 +195,9 @@ Only 3 classnames: for 0, 1 and half*/
 	.elm-visible-smartphone-only  {display:inherit !important}
 	
 	.margin-0-smartphone 	 { margin:0 !important}	
-	..padding-0-smartphone 	 { padding:0 !important}		
+	.padding-0-smartphone 	 { padding:0 !important}		
+	
+	.width-col-for1, .width-col-for2, .width-col-for3, .width-col-for4, .width-col-for5, .width-col-for6, .width-col-for7, .width-col-for8, .width-col-for9, .width-col-for10, .width-col-for11, .width-col-for12, .width-for-full	,.width-for-half,.width-for-third,.width-for-third2,.width-for-quarter {width:100% !important; float:none  }	
 }
 
 @media (max-width:768px)  {
@@ -271,10 +208,16 @@ Only 3 classnames: for 0, 1 and half*/
 	.elm-visible-normal  {display:none}
 	
 	.margin-0-tablet-smartphone 	 { margin:0 !important}	
-	..padding-0-tablet-smartphone 	 { padding:0 !important}			
+	.padding-0-tablet-smartphone 	 { padding:0 !important}			
 	
 	.responsive-cols {float:none !important; clear:left}
-	
-	
-	.width-col-for1, .width-col-for2, .width-col-for3, .width-col-for4, .width-col-for5, .width-col-for6, .width-col-for7, .width-col-for8, .width-col-for9, .width-col-for10, .width-col-for11, .width-col-for12, .width-for-full	,.width-for-half,.width-for-third,.width-for-third2,.width-for-quarter {width:100% !important; float:none  }
 }
+
+
+
+
+/* ******************
+    DIRECTIVES
+	**************** */
+	
+*[iy-cursor="hand"],*[data-iy-cursor="hand"]  {cursor:pointer}	
