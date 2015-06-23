@@ -1,76 +1,122 @@
 /*  IYABLE.CSS 
 	This is a REAL css framework for responsive web design.
 
- * iyable v 0.15.1 (http://indianayourself.com)
+ * iyable v 0.15.1.6 (http://indianayourself.com)
  * Copyright 2014-2015 Ignacio Ramos (@irfaelo) / Indiana Yourself
  * See more details in... (https://github.com/irfaelo)
  * If works for you, please donate.
   
 
---> PARTS TAKEN FROM normalize.css v3.0.2 | MIT License | git.io/normalize */
-html{font-family:sans-serif;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%}body{margin:0}article,aside,details,figcaption,figure,footer,header,hgroup,main,menu,nav,section,summary{display:block}audio,canvas,progress,video{display:inline-block;vertical-align:baseline}audio:not([controls]){display:none;height:0}[hidden],[data-hidden="hand"],template{display:none}a{background-color:transparent}a:active,a:hover{outline:0}abbr[title]{border-bottom:1px dotted}b,strong{font-weight:700}dfn{font-style:italic} /* <-- end normalize */
+ PARTS TAKEN FROM normalize.css v3.0.2 | MIT License | git.io/normalize */
+html{font-family:sans-serif;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%}body{margin:0}article,aside,details,figcaption,figure,footer,header,hgroup,main,menu,nav,section,summary{display:block}audio,canvas,progress,video{display:inline-block;vertical-align:baseline}audio:not([controls]){display:none;height:0}[hidden],[data-hidden="hand"],template{display:none}a{background-color:transparent}a:active,a:hover{
+	outline: 0;
+	text-align: center;
+}abbr[title]{border-bottom:1px dotted}b,strong{font-weight:700}dfn{font-style:italic} /* <-- end normalize */
 
 /* Complete normalization for html tag for fitting size 100% 
-AND FITS 
+AND FITS 	
 ------------- */
-html, body, .full-fit {	height: 100%; width: 100%;}
-.bg-fits { background-repeat:no-repeat; background-position:center; background-size:cover; background-clip:border-box}
+html, body, .full-fit, {	height: 100% !important; width: 100% !important;}
+
+.full-fit,  .all-fits{display:block;overflow:auto;}
+.bg-fits,  .all-fits { background-repeat:no-repeat !important; 
+  background-position:center; 
+  background-size:cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover; background-clip:border-box; }
+
+/* BASICS AND BGS */
+
+.bg-semidark {background-color:rgba(0,0,0,0.33)}
+.no-scroll   {overflow:hidden;}
 
 /* FLOATS ELEMENT 
 ------------- */
-	.fl-left {float: left;}
-    .fl-none {float:none}	
+	.fl-left, .responsive-cols  {float: left;}
+    .fl-none {float:none !important}	
 	.fl-right {float: right;}
+	
 	
 /* CENTERS 
 ------------- */	
+.cont-center 		{text-align:left ; margin:0 auto  !important; display:table}
 
-.center-div 		{text-align:center}
-.center-div  div 	{text-align:left ; margin:0 auto }
+/* TEXTS ALIGNS 
+------------- */	
+.txt-left {text-align:left !important}
+.txt-center {text-align:center !important}
+.txt-right {text-align:right !important}
 
 /* WIDTHS 
 ------------- */
 .width-col-for1, .width-col-for2, .width-col-for3, .width-col-for4, .width-col-for5, .width-col-for6, .width-col-for7, .width-col-for8, .width-col-for9, .width-col-for10, .width-col-for11, .width-col-for12, .width-for-full	,.width-for-half,.width-for-third,.width-for-third2,.width-for-quarter {
   float: left ;
 }
-.width-col-for12 ,.width-for-full	{
+.w12, .width-col-for12 ,.width-for-full	{
   width: 100%;
 }
-.width-col-for11 {
+.w11, .width-col-for11 {
   width: 91.66666667%;
 }
-.width-col-for10 {
+.w10, .width-col-for10 {
   width: 83.33333333%;
 }
-.width-col-for9 {
+.w9, .width-col-for9 {
   width: 75%;
 }
-.width-col-for8,.width-for-third2 {
+.w8, .width-col-for8,.width-for-third2 {
   width: 66.66666667%;
 }
-.width-col-for7 {
+.w7,.width-col-for7 {
   width: 58.33333333%;
 }
-.width-col-for6,.width-for-half {
+.w6,.width-col-for6,.width-for-half {
   width: 50%;
 }
-.width-col-for5 {
+.w5,.width-col-for5 {
   width: 41.66666667%;
 }
-.width-col-for4,.width-for-third {
+.w4,.width-col-for4,.width-for-third {
   width: 33.33333333%;
 }
-.width-col-for3,.width-for-quarter {
+.w3,.width-col-for3,.width-for-quarter {
   width: 25%;
 }
-.width-col-for2 {
+.w2,.width-col-for2 {
   width: 16.66666667%;
 }
-.width-col-for1 {
+.w1,.width-col-for1 {
   width: 8.33333333%;
 }
- 
+.no-width, .disappear {width:0 !important}
+.appear {width:auto}
 
+
+/* FONT SIZE
+------------- */
+
+.fs8 {font-size:8px}
+.fs9 {font-size:9px}
+.fs10 {font-size:10px}
+.fs11 {font-size:11px}
+.fs12 {font-size:12px}
+.fs13 {font-size:13px}
+.fs14 {font-size:14px}
+.fs15 {font-size:15px}
+.fs16 {font-size:16px}
+.fs17 {font-size:17px}
+.fs18 {font-size:18px}
+.fs19 {font-size:19px}
+.fs20 {font-size:20px}
+.fs21 {font-size:21px}
+.fs22 {font-size:22px}
+.fs23 {font-size:23px}
+.fs24 {font-size:24px}
+.fs25 {font-size:25px}
+
+
+ 
 /* VISIBILITY AND OPACITY FOR A RESPONSIVE ELEMENT 
 ------------- */
 	.elm-visible {display:inherit !important}
@@ -92,11 +138,12 @@ html, body, .full-fit {	height: 100%; width: 100%;}
 	
 			
 /* OPACITY 
--------------
-Only 3 classnames: for 0, 1 and half*/
-	.opacity-0 {opacity:0}
-	.opacity-1 {opacity:1}
-	.opacity-half {opacity:.5}
+------------- */
+	.opacity-0, .disappear {opacity:0}
+	.opacity-1, .appear {opacity:1}
+	.opacity-075 {opacity:.75}
+	.opacity-half ,.opacity-050 {opacity:.5}
+	.opacity-025 {opacity:.25}
 
 
 
@@ -104,30 +151,48 @@ Only 3 classnames: for 0, 1 and half*/
 ----------------- */
 .trans-inout-1s    {transition:all ease-in-out 1s;-webkit-transition:all 1s ease-in-out;-o-transition:all 1s ease-in-out;}
 .trans-inout-500ms {transition:all ease-in-out .5s;-webkit-transition:all .5s ease-in-out;-o-transition:all .5s ease-in-out;}
+.trans-inout-250ms {transition:all ease-in-out .25s;-webkit-transition:all .25s ease-in-out;-o-transition:all .25s ease-in-out;}
 
 .trans-in-1s    {transition:all ease-in 1s !important;-webkit-transition:all 1s ease-in  !important;-o-transition:all 1s ease-in !important;}
 .trans-in-500ms {transition:all ease-in .5s;-webkit-transition:all .5s ease-in;-o-transition:all .5s ease-in;}
+.trans-in-250ms {transition:all ease-in .25s;-webkit-transition:all .25s ease-in;-o-transition:all .25s ease-in;}
 
 .trans-out-1s    {transition:all ease-out 1s !important;-webkit-transition:all 1s ease-out !important;-o-transition:all 1s ease-out !important;}
 .trans-out-500ms {transition:all ease-out .5s !important;-webkit-transition:all .5s ease-out !important;-o-transition:all .5s ease-out !important;}
+.trans-out-250ms {transition:all ease-out .25s !important;-webkit-transition:all .25s ease-out !important;-o-transition:all .25s ease-out !important;}
 
+.trans-linear-1s    {transition:all linear 1s !important;-webkit-transition:all 1s linear !important;-o-transition:all 1s linear !important;}
+.trans-linear-500ms {transition:all linear .5s !important;-webkit-transition:all .5s linear !important;-o-transition:all .5s linear !important;}
+.trans-linear-250ms {transition:all linear !important;-webkit-transition:all .25s linear !important;-o-transition:all .25s linear !important;}
 
 /* CONTENT
 ------------- */
-.cont {width:100%; padding:33px; text-align:center;}
+.cont {width:calc(100%-66px); padding:33px; text-align:center;}
 .cont div {width:auto; margin:0 auto; text-align:left}
 
-/* POSITIONS 
-------------- */
-.position-top,.fixed-top  {top:0 !important}
-.position-bottom,.fixed-bottom  {bottom:0 !important}
-.position-left,.fixed-left  {left:0 !important}
-.position-right,.fixed-right  {right:0 !important}
 
+
+
+.modal { text-align:center; width: 0%; height: 0%;position:fixed; top:0; left:0;   background:rgba(6,6,6,0);opacity:0; z-index:9999; margin:25%}
+.modal_cont, .modal_cont_rounded { margin:33px; width:calc (100% - 66px);height:calc (100% - 66px);background:#fff !important;-webkit-box-shadow: 0 3px 13px -3px #000000;
+box-shadow: 0 3px 13px -3px #000000; padding:10px; opacity:0; transition-delay:666ms}
+
+
+.modal_cont_rounded {-webkit-border-radius: 13px;border-radius: 13px}
+
+.modal_cont_ok {opacity:1;transition: all ease-in-out	333ms}
+
+
+.modal_push {width:100%; height:100%;opacity:1 ; display:block !important; background:rgba(33,33,33,0.666) !important; margin:0}
+
+.modal_cont_push {opacity:1}
+ 
 /* FIXEDS
 ------------- */
 
-.fixed,.fixed-top, .fixed-left, .fixed-bottom, .fixed-right {position:fixed}
+.fixed,.fixed-top, .fixed-left, .fixed-bottom, .fixed-right {position:fixed; -webkit-backface-visibility:hidden; }
+.fixed-imp {position:fixed !important}
+.fixed-smartphone { }
 
 /* CLEAR AND NOT FLOATS 
 ----------------------------- */
@@ -136,26 +201,43 @@ Only 3 classnames: for 0, 1 and half*/
 .clear-left {clear:left}
 .clear-right{clear:right}
 
+.clearfix{ clear: both;  line-height:0px; }
 
-/* POSTIONS
+/* IMAGES 
+--------------*/
+
+.img-h-auto ,.img-size-auto{height:auto !important}
+.img-w-auto ,.img-size-auto{width:auto !important}
+
+.img-h-ih ,.img-size-ih{height:inherit !important}
+.img-w-ih ,.img-size-ih{width:inherit !important}
+
+
+/* POSITIONS 
 ------------- */
+.position-top,.fixed-top  {top:0 !important}
+.position-bottom,.fixed-bottom  {bottom:0 !important}
+.position-left,.fixed-left  {left:0 !important}
+.position-right,.fixed-right  {right:0 !important}
 
+.rel {position:relative}
 .abs {position:absolute}  
-.hide-left {left:-1000px}
-.show-left {left:0}
+.hide-left {left:-1000px !important}
+.show-left {left:0 !important}
 
-.hide-top {top:-1000px}
-.show-top {top:0}
+.hide-top {top:-1000px !important}
+.show-top {top:0 !important}
 
-.hide-right {right:-1000px}
-.show-right {right:0}
+.hide-right {right: 1000px !important}
+.show-right {right:0 !important}
+.hide-bottom {bottom: 1000px !important}
+.show-bottom {bottom:0 !important}
 
-.hide-bottom {bottom:-1000px}
-.show-bottom {bottom:0}
 
-/* COLUMNS
-------------- */
-.responsive-cols {float:left}
+/* call the class */
+	.margin-0-tablet-smartphone,
+	.padding-0-tablet-smartphone 	 {}	
+
 
 /* BEAUTIFICATION
 ------------- */
@@ -163,7 +245,23 @@ Only 3 classnames: for 0, 1 and half*/
 .radius-4{  border-radius: 4px;}
 .radius-8{  border-radius: 8px;}
 
+.z-hidden{  z-index:-1000 !important}
+.z-base{  z-index:1 !important}
+.z-low		{  z-index:1000 !important}
+.z-medium	{  z-index:2000 !important}
+.z-high		{  z-index:3000 !important}
+
+.shadow-txt {text-shadow: 0 0 1px rgba(51,51,51,0.2), 0 1px 2px #000;}
+.antialias {
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	text-shadow: 0 0 1px rgba(51,51,51,0.2); /* jasper espejo tech*/
+	text-align: center;
+}
+
 /*____ responsive zone ____*/
+.elm-menu {} 
+.footer-center-smartphone {}  
 
 /*	Change HERE the size for a width for a responsive view. A default size is defined (1000px) 
  *  
@@ -171,6 +269,9 @@ Only 3 classnames: for 0, 1 and half*/
  *  affects to 'elm-normal'
  */
 @media (max-width:1000px) and (min-width:768px){
+	
+
+	
 .elm-hidden-normal {display:inherit}
 .elm-visible-normal  {display:none}
 }
@@ -191,6 +292,18 @@ Only 3 classnames: for 0, 1 and half*/
  *  affects to 'elm-smartphone'
  */
 @media (max-width:480px){
+	.footer-center-smartphone { font-size: 23px !important; text-align:center !important}
+	
+	.elm-menu {color:rgba(255,102,153,1) !important;background:#fff; position:absolute; z-index:1333; width:100% !important; top:0; left:0 !important; margin:0; padding-top:66px ; -webkit-box-shadow: 0 2px 8px -2px rgba(0,0,0,0.88);
+box-shadow: 0 2px 8px -2px rgba(0,0,0,0.88);}
+	.elm-responsive-abs { position:absolute !important; top:13px; right:13px;}
+	
+	.fixed-smartphone {position:fixed !important; -webkit-backface-visibility:hidden;   }
+
+	.menu-button {z-index:5000 !important; position:relative}
+	
+	.elm-menu * { float:none; margin-left:13px}
+	
 	.elm-hidden-smartphone-only   {display:none !important}	
 	.elm-visible-smartphone-only  {display:inherit !important}
 	
@@ -198,9 +311,16 @@ Only 3 classnames: for 0, 1 and half*/
 	.padding-0-smartphone 	 { padding:0 !important}		
 	
 	.width-col-for1, .width-col-for2, .width-col-for3, .width-col-for4, .width-col-for5, .width-col-for6, .width-col-for7, .width-col-for8, .width-col-for9, .width-col-for10, .width-col-for11, .width-col-for12, .width-for-full	,.width-for-half,.width-for-third,.width-for-third2,.width-for-quarter {width:100% !important; float:none  }	
+	
+	
+	
+ 
 }
 
 @media (max-width:768px)  {
+	
+	.expand-on-responsive  {width:100%; float:none}
+	
 	.elm-hidden-tablet-smartphone   {display:none !important}	
 	.elm-visible-tablet-smartphone  {display:inherit !important}
 	
@@ -220,4 +340,10 @@ Only 3 classnames: for 0, 1 and half*/
     DIRECTIVES
 	**************** */
 	
-*[iy-cursor="hand"],*[data-iy-cursor="hand"]  {cursor:pointer}	
+*[iy-cursor="hand"],*[data-iy-cursor="hand"],[data-hand],[iy-hand]  {cursor:pointer}	
+
+/* COLPHON */ 
+
+
+
+html,body {height:100%}
